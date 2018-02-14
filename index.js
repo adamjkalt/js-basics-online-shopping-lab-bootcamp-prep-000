@@ -64,9 +64,15 @@ return cart;
 }
 
 function placeOrder(cardNumber) {
+  var totalValue = 0;
+for (var i in cart) {
+      var itemKey = Object.keys(cart[i])[0];
+      var itemValue = cart[i][itemKey];
+      totalValue = totalValue + itemValue;
 if (cardNumber) {
 console.log(`Your total cost is ${$totalValue}, which will be charged to the card ${cardNumber}.`);
   
 }
 console.log("Sorry, we don't have a credit card on file for you.");
+}
 }
