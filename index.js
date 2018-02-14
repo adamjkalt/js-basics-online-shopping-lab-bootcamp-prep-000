@@ -41,9 +41,6 @@ else if (currentCart.length > 2) {
   }
 }
 
-function getSum(total, num) {
-    return total + num;
-}
 function total() {
 let currentCart = [];
 for (var i in cart) {
