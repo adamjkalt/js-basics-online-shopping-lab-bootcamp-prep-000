@@ -42,13 +42,13 @@ else if (currentCart.length > 2) {
 }
 
 function total() {
-let currentCart = [];
+var totalValue = 0;
 for (var i in cart) {
       var itemKey = Object.keys(cart[i])[0];
       var itemValue = cart[i][itemKey];
-      itemValue
-
+      totalValue = totalValue + itemValue;
 }
+return totalValue;
 }
 
 
