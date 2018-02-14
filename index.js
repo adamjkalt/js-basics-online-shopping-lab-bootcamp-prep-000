@@ -43,7 +43,6 @@ else if (currentCart.length > 2) {
 
 function getSum(final, num) {
     return final + num;
-}
 function total() {
 let currentCart = [];
 for (var i in cart) {
@@ -53,7 +52,7 @@ for (var i in cart) {
 document.getElementById(currentCart).innerHTML = itemValue[1].reduce(getSum);
 }
 }
-
+}
 
 function removeFromCart(item) {
   // write your code here
