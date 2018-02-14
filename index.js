@@ -53,7 +53,8 @@ return totalValue;
 
 
 function removeFromCart(item) {
-cart.splice(item);
+var itemKey = Object.keys(cart[i])[0];
+cart.splice(itemKey());
 return cart;
 }
 
