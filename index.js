@@ -1,7 +1,7 @@
 var cart = [];
 
 function getCart() {
- return cart;
+return cart;
 }
 
 function setCart(c) {
@@ -19,25 +19,28 @@ return cart;
 }
 
 function viewCart() {
-  console.log(cart);
-  if (cart.length === 0) {
-    console.log(`Your shopping cart is empty.`);
-  }
-  for (let i = 0; i < cart.length; i++) {
-    
-  if (cart.length > 0) {
-    console.log(`In your cart, you have ${Object.keys(cart[i])[0]} at $${cart[i][Object.keys(cart[i])[0]]}.`);
-  }
-  else if (cart.length > 1) {
-    console.log(`In your cart, you have ${Object.keys(cart[i])[0]} at $${cart[i][Object.keys(cart[i])[0]]} and ${Object.keys(cart[i])[1]} at $${cart[i][Object.keys(cart[i])[1]]}.`);
-  }
-  //while (cart.length > 2) {
-   // i++;
-   if (cart.length > 2) {
-    console.log(`In your cart, you have ${Object.keys(cart[i])[0]} at $${cart[i][Object.keys(cart[i])[0]]}, ${Object.keys(cart[i])[1]} at $${cart[i][Object.keys(cart[i])[1]]}, and ${Object.keys(cart[i])[2]} at $${cart[i][Object.keys(cart[i])[2]]} `);
-   }
+let currentCart = [];
+if (cart.length < 1) {
+    console.log("Your shopping cart is empty.");
+  } else {
+for (var i in cart) {
+      var itemKey = Object.keys(cart[i])[0];
+      var itemValue = cart[i][itemKey];
+      currentCart.push(`${itemKey} at \$${itemValue}`);
+    }
+   if (cart.length === 1) {
+console.log(`In your cart, you have ${currentCart[0]}.`);
 }
+else if (cart.length === 2) {
+console.log(`In your cart, you have ${currentCart[0]} and ${currentCart[1]}.`);
 }
+else if (currentCart.length > 2) {
+    var endItem = currentCart.pop();
+    console.log(`In your cart, you have ${currentCart.join(", ")}, and ${endItem}.`);
+  }
+  }
+}
+
 
 function total() {
   // write your code here
