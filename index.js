@@ -54,7 +54,11 @@ return totalValue;
 
 function removeFromCart(item) {
 for (let i=0; i < cart.length; i++) {
-var itemKey = Object.keys(cart[i])[0];
+if (cart[i].hasOwnProperty(item)) {
+    console.log('this is fog (' + 
+      name + ') for sure. Value: ' + buz[name]);
+  }
+
 cart.splice(itemKey);
 }
 return cart;
