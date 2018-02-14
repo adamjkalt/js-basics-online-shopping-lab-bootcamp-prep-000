@@ -67,7 +67,9 @@ function placeOrder(cardNumber) {
 for (let i=0; i < cart.length; i++) {
 if (cart[i].hasOwnProperty(item)) {
      cart.splice(i, 1);
-console.log("Sorry, we don't have a credit card on file for you.");  }
+console.log(`Your total cost is ${$totalValue}, which will be charged to the card ${cardNumber}.`);
+  
+}
 }
 console.log("Sorry, we don't have a credit card on file for you.");
 }
