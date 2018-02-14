@@ -53,7 +53,7 @@ return totalValue;
 
 
 function removeFromCart(item) {
-var removed = cart.splice();
+var removed = cart.splice(item);
 }
 
 function placeOrder(cardNumber) {
