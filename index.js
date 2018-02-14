@@ -43,7 +43,7 @@ else if (currentCart.length > 2) {
 
 
 function total() {
-  // write your code here
+console.log(cart.length);
 }
 
 function removeFromCart(item) {
