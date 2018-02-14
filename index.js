@@ -46,8 +46,8 @@ let currentCart = [];
 for (var i in cart) {
       var itemKey = Object.keys(cart[i])[0];
       var itemValue = cart[i][itemKey];
-      currentCart.push(`${itemKey} at \$${itemValue}`);
-currentCart[].reduce(getSum);
+      itemValue
+
 }
 }
 
