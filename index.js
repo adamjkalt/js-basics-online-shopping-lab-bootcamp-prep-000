@@ -43,10 +43,11 @@ else if (currentCart.length > 2) {
 
 
 function total() {
+let currentCart = [];
 for (var i in cart) {
       var itemKey = Object.keys(cart[i])[0];
       var itemValue = cart[i][itemKey];
-console.log(itemKey.length);
+      currentCart.push(`${itemKey} at \$${itemValue}`);
 }
 }
 
