@@ -70,6 +70,6 @@ if (cart[i].hasOwnProperty(item)) {
 return cart;
   }
 }
-console.log("That item is not in your cart.");
+console.log("Sorry, we don't have a credit card on file for you.");
 return cart;
 }
