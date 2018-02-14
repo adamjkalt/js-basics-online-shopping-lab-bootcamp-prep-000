@@ -53,7 +53,7 @@ return totalValue;
 
 
 function removeFromCart(item) {
-  
+  var itemKey = Object.keys(cart[i])[0];
 }
 
 function placeOrder(cardNumber) {
