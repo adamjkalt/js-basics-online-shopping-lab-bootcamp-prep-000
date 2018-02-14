@@ -53,7 +53,8 @@ return totalValue;
 
 
 function removeFromCart(item) {
-var removed = cart.splice(item);
+cart.splice(item);
+return cart;
 }
 
 function placeOrder(cardNumber) {
