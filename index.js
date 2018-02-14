@@ -50,7 +50,7 @@ for (var i in cart) {
       var itemKey = Object.keys(cart[i])[0];
       var itemValue = cart[i][itemKey];
       currentCart.push(`${itemKey} at \$${itemValue}`);
-document.getElementById(currentCart).innerHTML = currentCart.reduce(getSum);
+document.getElementById(currentCart).innerHTML = itemValuet.reduce(getSum);
 }
 }
 
