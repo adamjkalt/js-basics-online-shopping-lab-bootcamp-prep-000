@@ -55,11 +55,10 @@ return totalValue;
 function removeFromCart(item) {
 for (let i=0; i < cart.length; i++) {
 if (cart[i].hasOwnProperty(item)) {
-    console.log("That item is not in your cart.");
+     cart.splice(cart[i]);
   }
-
-cart.splice(itemKey);
 }
+console.log("That item is not in your cart.");
 return cart;
 }
 
