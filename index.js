@@ -41,13 +41,15 @@ else if (currentCart.length > 2) {
   }
 }
 
-
+function getSum(final, num) {
+    return final + num;
 function total() {
 let currentCart = [];
 for (var i in cart) {
       var itemKey = Object.keys(cart[i])[0];
       var itemValue = cart[i][itemKey];
       currentCart.push(`${itemKey} at \$${itemValue}`);
+}
 }
 }
 
