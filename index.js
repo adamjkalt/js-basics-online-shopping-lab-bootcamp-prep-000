@@ -55,8 +55,7 @@ return totalValue;
 function removeFromCart(item) {
 for (let i=0; i < cart.length; i++) {
 if (cart[i].hasOwnProperty(item)) {
-    console.log('this is fog (' + 
-      name + ') for sure. Value: ' + buz[name]);
+    console.log("That item is not in your cart.");
   }
 
 cart.splice(itemKey);
