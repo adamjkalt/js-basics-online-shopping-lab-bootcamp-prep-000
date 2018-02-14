@@ -41,16 +41,15 @@ else if (currentCart.length > 2) {
   }
 }
 
-
+function getSum(total, num) {
+    return total + num;
+}
 function total() {
 let currentCart = [];
 for (var i in cart) {
       var itemKey = Object.keys(cart[i])[0];
       var itemValue = cart[i][itemKey];
       currentCart.push(`${itemKey} at \$${itemValue}`);
-let getSum = (total, num) {
-    return total + num;
-}
 document.getElementById(currentCart).innerHTML = itemValue[1].reduce(getSum);
 }
 }
